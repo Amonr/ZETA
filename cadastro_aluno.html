@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cadastro Aluno</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+    <script>
+        $('.cpf').mask('000-000.000-00');
+
+        function exibirMensagem() {
+            alert("Salvo com Sucesso!");
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-bolt">ZETA</i></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="Tela_login.html" target="_self">SAIR</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="entrando">
+            <div class="col-lg-12">
+                <br>
+                <h2 class="section-heading">Cadastro de Alunos</h2>
+                <hr>
+                <div class="col-lg-10">
+                    <div class="form-group">
+                        <label for="email">Matrícula</label>
+                        <input type="email" class="form-control" placeholder="Matrícula">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Nome:</label>
+                        <input type="text" class="form-control" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Email:</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label>CPF</label>
+                        <input type="text" id="cpf" class="cpf form-control" placeholder="Digite seu CPF" />
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">Aluno com deficiência</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">Aluno sem deficiência</label>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="col-lg-10">
+            <div class="alert alert-warning alert-dismissible">
+
+                <strong>Atenção:</strong> Selecione os itens corretamente abaixo.
+            </div>
+            <div class="alert alert-warning alert-alert-dismissable">
+                <strong>Caso a necessidade especial não esteja especificada, informe à equipe de suporte.</strong>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="col-lg-5">
+                    <div class="well well-lg">
+                        <label class="checkbox">
+                                <input type="checkbox" value="">Cegueira 
+                            </label>
+                        <label class="checkbox">
+                                <input type="checkbox" value="">Pouca Visão.
+                            </label>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="well well-lg">
+                        <label class="checkbox">
+                                <input type="checkbox" value=" ">Deficiência Auditiva
+                            </label>
+                        <label class="checkbox">
+                                <input type="checkbox" value=" ">Deficiência Física
+                            </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <input type="submit" class="btn btn-success" onclick="exibirMensagem()" value="Enviar" />
+        <br>
+        <hr>
+    </div>
+    <div id="social">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-md-3">
+                        <a href="https://www.facebook.com/profile.php"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="cadastro_aluno.html"><i class="fa fa-dribbble"></i></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="SAIBAMAIS.html"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="SAIBAMAIS.html"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="f">
+        <div class="container">
+            <div class="row">
+                <p>ProjetoZeta@SOS.com <i class="fa fa-heart"></i> SUPORTE</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
